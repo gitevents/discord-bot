@@ -1,0 +1,9 @@
+name = "discord"
+main = "index.js"
+compatibility_date = "2022-06-23"
+account_id = "648b4f94eafcecc728da4e3f3a00b23a"
+vars = { DISCORD_API_URL = "https://discord.com/api/v10" }
+
+[[rules]]
+type = "ESModule"
+globs = [ "**/*.js" ]
