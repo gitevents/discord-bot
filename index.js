@@ -40,6 +40,7 @@ async function handleRequest(request) {
   // TODO: adjust entity type and privacy level depending on online/offline events from issue body
   const discordEventData = {
     name: payload.issue.title,
+    description: content.text,
     scheduled_start_time: utcDate.toJSON(),
     scheduled_end_time: utcEndDate.toJSON(),
     privacy_level: 2,
@@ -48,6 +49,8 @@ async function handleRequest(request) {
       location: location.text
     }
   }
+
+  console.log(discordEventData)
 
   const discordRequestOptions = {
     method: 'POST',
@@ -65,6 +68,8 @@ async function handleRequest(request) {
     `${DISCORD_API_URL}/guilds/${serverId}/scheduled-events`,
     discordRequestOptions
   )
+
+  console.log(apiResponse)
 
   return new Response('OK')
 }
