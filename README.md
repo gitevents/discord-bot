@@ -2,7 +2,7 @@
 
 GitEvents is a set of automation tools and actions inspired by "Issue Ops". Events, talks, proposals etc. are powered by GitHub issues. This bot automatically creates the events on Discord.
 
-The bot is triggered by [GitEvents Propaganda](https://github.com/gitevents/propaganda).
+The bot is triggered by [GitEvents Broadcast](https://github.com/gitevents/broadcast).
 
 ## Add the GitEvents Bot to your server
 
