@@ -76,6 +76,6 @@
     "license-checker": "^25.0.1",
     "pinst": "^3.0.0",
     "prettier": "^2.8.4",
-    "wrangler": "^2.10.0"
+    "wrangler": "^2.20.0"
   }
 }
