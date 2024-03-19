@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { decodeJwt, parseJwt } from '@cfworker/jwt'
 import bodyParser from '@zentered/issue-forms-body-parser'
 import { add } from 'date-fns'
@@ -69,7 +70,14 @@ async function handleRequest(request) {
     discordRequestOptions
   )
 
-  console.log(apiResponse)
+  const { status, body } = apiResponse
+
+  console.log(status)
+  console.log(body)
+
+  const response = await apiResponse.json()
+
+  console.log(response)
 
   return new Response('OK')
 }
