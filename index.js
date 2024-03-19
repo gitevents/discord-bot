@@ -1,8 +1,7 @@
 import { decodeJwt, parseJwt } from '@cfworker/jwt'
 import bodyParser from '@zentered/issue-forms-body-parser'
 import { add } from 'date-fns'
-import pkg from 'date-fns-tz'
-const { zonedTimeToUtc } = pkg
+import { zonedTimeToUtc } from 'date-fns-tz'
 
 export default {
   async fetch(request, env) {
